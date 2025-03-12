@@ -1,0 +1,13 @@
+####____Install Podman (Linux users)
+sudo apt install podman -y
+
+####____How to Run an Nginx Container
+podman run -d -p 8080:80 --name pod-nginx nginx
+
+####____Get List Running Container of Podman
+podman ps
+
+####____ Stop & Remove Container
+podman stop pod-nginx
+podman rm pod-nginx
+
